@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate and Soil Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Climate and Soil Monitoring System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Real-Time Data Section -->
+        <section class="dashboard">
+            <h2>Real-Time Data</h2>
+            <div class="data">
+                <div>
+                    <h3>Temperature</h3>
+                    <p id="temperature">Loading...</p>
+                </div>
+                <div>
+                    <h3>Humidity</h3>
+                    <p id="humidity">Loading...</p>
+                </div>
+                <div>
+                    <h3>Soil Moisture</h3>
+                    <p id="soil-moisture">Loading...</p>
+                </div>
+            </div>
+            <div class="actions">
+                <button id="refresh-data">Refresh Data</button>
+                <button id="save-data">Save Data</button>
+            </div>
+            <p id="save-confirmation" style="display: none;">Data saved successfully!</p>
+        </section>
+        
+        <!-- Graph Section -->
+        <section class="graph">
+            <h2>Climate Data Graphs</h2>
+            <div class="graph-container">
+                <canvas id="temperatureGraph"></canvas>
+                <canvas id="humidityGraph"></canvas>
+                <canvas id="soilMoistureGraph"></canvas>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Climate Monitoring System. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

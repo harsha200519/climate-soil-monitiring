@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e8f5e9; /* Light green */
+    color: #2e7d32; /* Dark green */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #388e3c; /* Dark green */
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.dashboard h2, .graph h2 {
+    text-align: center;
+    color: #388e3c;
+}
+
+.data {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #66bb6a; /* Medium green */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #388e3c; /* Dark green */
+}
+
+.graph-container {
+    display: flex;
+    justify-content: center; /* Center the graphs */
+    gap: 5px; /* Minimal gap between graphs */
+    margin: 20px 0;
+    flex-wrap: nowrap; /* Ensure graphs stay in one row */
+}
+
+.graph-container canvas {
+    width: 50px; /* Compact width for graphs */
+    height: 50px; /* Compact height for graphs */
+    background: #e8f5e9; /* Light green */
+    border: 2px solid #388e3c; /* Dark green */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for visual appeal */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #388e3c;
+    color: #fff;
+    position: relative;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .graph-container {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        gap: 10px;
+    }
+
+    .graph-container canvas {
+        width: 120px; /* Smaller width for mobile screens */
+        height: 120px; /* Smaller height for mobile screens */
+    }
+}
